@@ -3,6 +3,7 @@ from pynput.keyboard import Key, Controller
 import sys
 import os
 import time
+import json
 
 keyboard = Controller()
 
@@ -49,5 +50,11 @@ if browser.find_elements_by_css_selector("material-icons").count != 0:
         index = index + 1
 
 innerHTML = browser.execute_script("return document.body.innerHTML")
-#print(innerHTML)
+
+# Step 5: write HTML into JSON for further analysis
+jsonHTML = json.dumps(innerHTML)
+output = open("output.txt", "w")
+output.write(jsonHTML)
+output.close()
+
 print("Finished!\nNumber of cointegrated pairs = ", counter)
