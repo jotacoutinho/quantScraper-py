@@ -1,0 +1,970 @@
+
+  <app-root _nghost-c0="" ng-version="4.4.4"><!----><div _ngcontent-c0="" class="wrapper">
+    
+    <div _ngcontent-c0="" class="main-panel main-minify" id="main-panel">
+        <app-navbar _ngcontent-c0="" _nghost-c1=""><nav _ngcontent-c1="" class="navbar navbar-default navbar-fixed-top" style="background-color: #2c2c2c;">
+    <div _ngcontent-c1="" class="container-fluid">
+        <div _ngcontent-c1="" class="navbar-header">
+            <button _ngcontent-c1="" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse" type="button">
+                <span _ngcontent-c1="" class="sr-only">Toggle navigation</span>
+                <span _ngcontent-c1="" class="icon-bar"></span>
+                <span _ngcontent-c1="" class="icon-bar"></span>
+                <span _ngcontent-c1="" class="icon-bar"></span>
+            </button>
+            <a _ngcontent-c1="" class="navbar-brand" href="/dashboard">
+                <img _ngcontent-c1="" alt="QuantGO" src="/assets/img/quantgo-new-logo-play-270x270.png" height="30px">
+            </a>
+        </div>
+        
+        <div _ngcontent-c1="" class="collapse navbar-collapse" id="navbarCollapse">
+            <ul _ngcontent-c1="" class="nav navbar-nav navbar-left">
+                <!----><li _ngcontent-c1="" routerlinkactive="active" class="">
+                    <a _ngcontent-c1="" title="Dashboard" href="/dashboard">
+                        <i _ngcontent-c1="" class="material-icons">dashboard</i> <b _ngcontent-c1="">Dashboard</b> <span _ngcontent-c1="" class="sr-only">(current)</span>
+                    </a>
+                </li><li _ngcontent-c1="" routerlinkactive="active" class="">
+                    <a _ngcontent-c1="" title="Cointegração" href="/long-short/cointegration">
+                        <i _ngcontent-c1="" class="material-icons">search</i> <b _ngcontent-c1="">Cointegração</b> <span _ngcontent-c1="" class="sr-only">(current)</span>
+                    </a>
+                </li><li _ngcontent-c1="" routerlinkactive="active" class="">
+                    <a _ngcontent-c1="" title="Correlação" href="/long-short/correlation">
+                        <i _ngcontent-c1="" class="material-icons">search</i> <b _ngcontent-c1="">Correlação</b> <span _ngcontent-c1="" class="sr-only">(current)</span>
+                    </a>
+                </li><li _ngcontent-c1="" routerlinkactive="active" class="">
+                    <a _ngcontent-c1="" title="Minhas Operações" href="/user-operations">
+                        <i _ngcontent-c1="" class="material-icons">list</i> <b _ngcontent-c1="">Minhas Operações</b> <span _ngcontent-c1="" class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li _ngcontent-c1="" class="dropdown" routerlinkactive="active">
+                    <a _ngcontent-c1="" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i _ngcontent-c1="" class="material-icons">assessment</i> <b _ngcontent-c1="">Relatórios</b> <span _ngcontent-c1="" class="sr-only">(current)</span>
+                    </a>
+                    <ul _ngcontent-c1="" class="dropdown-menu">
+                        <li _ngcontent-c1="">
+                            <a _ngcontent-c1="" class="dropdown-toggle" data-toggle="dropdown" title="Perfil do Usuário" href="/financial-report">
+                                <i _ngcontent-c1="" class="material-icons">timeline</i> <b _ngcontent-c1="">Operações Acumuladas</b> <span _ngcontent-c1="" class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul _ngcontent-c1="" class="nav navbar-nav navbar-right">
+                <li _ngcontent-c1="" class="active">
+
+                    <a _ngcontent-c1="" class="btn btn-warning" title="Conheça nossos Planos" href="/upgrade"><b _ngcontent-c1="">Conheça nossos Planos</b></a>
+                    
+
+                </li>
+                <li _ngcontent-c1="" class="dropdown">
+                    <a _ngcontent-c1="" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i _ngcontent-c1="" class="material-icons">person</i> <b _ngcontent-c1="">Perfil</b> <span _ngcontent-c1="" class="sr-only">(current)</span>
+                    </a>
+                    <ul _ngcontent-c1="" class="dropdown-menu">
+                        <li _ngcontent-c1="">
+                            <a _ngcontent-c1="" class="dropdown-toggle" data-toggle="dropdown" title="Perfil do Usuário" href="/user-profile">
+                                <i _ngcontent-c1="" class="material-icons">person</i> <b _ngcontent-c1="">Perfil</b> <span _ngcontent-c1="" class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <!----><li _ngcontent-c1="">
+                            <a _ngcontent-c1="" class="dropdown-toggle" data-toggle="dropdown" title="Configurações do Usuário" href="/user-settings">
+                                <i _ngcontent-c1="" class="material-icons">settings</i> <b _ngcontent-c1="">Configurações</b> <span _ngcontent-c1="" class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <!---->
+                    </ul>
+                </li>
+                <li _ngcontent-c1="">
+                    <a _ngcontent-c1="" style="cursor: pointer;" title="Sair">
+                        <i _ngcontent-c1="" class="material-icons">settings_power</i> <b _ngcontent-c1="">Sair</b> <span _ngcontent-c1="" class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</app-navbar>
+        <router-outlet _ngcontent-c0=""></router-outlet><search-operations-cmp _nghost-c4=""><div _ngcontent-c4="" class="main-content">
+    <div _ngcontent-c4="" class="container-fluid">
+        <div _ngcontent-c4="" class="row">
+            <div _ngcontent-c4="" class="col-md-12">
+                <div _ngcontent-c4="" class="card">
+                    <div _ngcontent-c4="" class="card-content card-filter-content table-responsive">
+                        <h5 _ngcontent-c4="" class="category" title="Configure e gerencie seus filtros para a busca dos pares de Long &amp; Short. Você poderá selecionar alguns filtros para refinar sua busca."><i _ngcontent-c4="" class="material-icons">search</i> Busque as melhores operações no momento</h5>
+                        <div _ngcontent-c4="" class="row">
+                            <div _ngcontent-c4="" class="col-md-4">
+                                <div _ngcontent-c4="" class="form-group">
+                                    <label _ngcontent-c4="">Meus Filtros</label>
+                                    <select _ngcontent-c4="" class="form-control border-input ng-valid ng-dirty ng-touched" title="Seus filtros salvos">
+                                        <option _ngcontent-c4="" value="0: undefined">Nenhum</option>
+                                        <!----><option _ngcontent-c4="" value="1: Object">B50/2DP</option><option _ngcontent-c4="" value="2: Object">B50/1.8DP</option><option _ngcontent-c4="" value="3: Object">B100/2DP</option><option _ngcontent-c4="" value="4: Object">B100/1.8DP</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group">
+                                    <label _ngcontent-c4=""></label>
+                                    <button _ngcontent-c4="" class="btn btn-info btn-fill btn-wd" title="Remover o Filtro Selecionado" type="button"><i _ngcontent-c4="" class="ti-save-alt"></i> Remover Filtro</button>
+                                </div>
+                            </div>
+                            <div _ngcontent-c4="" class="col-md-4">
+                                <div _ngcontent-c4="" class="form-group is-empty">
+                                    <label _ngcontent-c4="">Nome do Filtro</label>
+                                    <input _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" title="Digite um nome para salvar o filtro para facilitar a utilização do mesmo no combo Meus Filtros." type="text">
+                                </div>
+                            </div>
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group">
+                                    <label _ngcontent-c4=""></label>
+                                    <button _ngcontent-c4="" class="btn btn-info btn-fill btn-wd" title="Salvar o Filtro Preenchido abaixo" type="button"><i _ngcontent-c4="" class="ti-save-alt"></i> Salvar Filtro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div _ngcontent-c4="" class="card-content table-responsive">
+                        <!---->
+                        <div _ngcontent-c4="" class="row">
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group">
+                                    <label _ngcontent-c4="">Ativo Dependente</label>
+                                    <select _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" title="Possibilita a busca específica de pares com uma determinado ativo na condição de dependente. Quando selecionar 'Todos', será utilizado todos os ativos configurados pelo usuário.">
+                                        <option _ngcontent-c4="" value="0: undefined">Todos</option>
+                                        <!----><option _ngcontent-c4="" value="1: ABEV3">ABEV3</option><option _ngcontent-c4="" value="2: ALUP11">ALUP11</option><option _ngcontent-c4="" value="3: ARZZ3">ARZZ3</option><option _ngcontent-c4="" value="4: AZUL4">AZUL4</option><option _ngcontent-c4="" value="5: B3SA3">B3SA3</option><option _ngcontent-c4="" value="6: BBAS3">BBAS3</option><option _ngcontent-c4="" value="7: BBDC3">BBDC3</option><option _ngcontent-c4="" value="8: BBDC4">BBDC4</option><option _ngcontent-c4="" value="9: BBSE3">BBSE3</option><option _ngcontent-c4="" value="10: BEEF3">BEEF3</option><option _ngcontent-c4="" value="11: BOVA11">BOVA11</option><option _ngcontent-c4="" value="12: BRAP4">BRAP4</option><option _ngcontent-c4="" value="13: BRDT3">BRDT3</option><option _ngcontent-c4="" value="14: BRFS3">BRFS3</option><option _ngcontent-c4="" value="15: BRKM5">BRKM5</option><option _ngcontent-c4="" value="16: BRML3">BRML3</option><option _ngcontent-c4="" value="17: BRSR6">BRSR6</option><option _ngcontent-c4="" value="18: BTOW3">BTOW3</option><option _ngcontent-c4="" value="19: CCRO3">CCRO3</option><option _ngcontent-c4="" value="20: CESP6">CESP6</option><option _ngcontent-c4="" value="21: CIEL3">CIEL3</option><option _ngcontent-c4="" value="22: CMIG3">CMIG3</option><option _ngcontent-c4="" value="23: CMIG4">CMIG4</option><option _ngcontent-c4="" value="24: CPLE6">CPLE6</option><option _ngcontent-c4="" value="25: CRFB3">CRFB3</option><option _ngcontent-c4="" value="26: CSAN3">CSAN3</option><option _ngcontent-c4="" value="27: CSMG3">CSMG3</option><option _ngcontent-c4="" value="28: CSNA3">CSNA3</option><option _ngcontent-c4="" value="29: CVCB3">CVCB3</option><option _ngcontent-c4="" value="30: CYRE3">CYRE3</option><option _ngcontent-c4="" value="31: DTEX3">DTEX3</option><option _ngcontent-c4="" value="32: ECOR3">ECOR3</option><option _ngcontent-c4="" value="33: EGIE3">EGIE3</option><option _ngcontent-c4="" value="34: ELET3">ELET3</option><option _ngcontent-c4="" value="35: ELET6">ELET6</option><option _ngcontent-c4="" value="36: EMBR3">EMBR3</option><option _ngcontent-c4="" value="37: ENAT3">ENAT3</option><option _ngcontent-c4="" value="38: ENBR3">ENBR3</option><option _ngcontent-c4="" value="39: ENGI11">ENGI11</option><option _ngcontent-c4="" value="40: EQTL3">EQTL3</option><option _ngcontent-c4="" value="41: ESTC3">ESTC3</option><option _ngcontent-c4="" value="42: EZTC3">EZTC3</option><option _ngcontent-c4="" value="43: FLRY3">FLRY3</option><option _ngcontent-c4="" value="44: GFSA3">GFSA3</option><option _ngcontent-c4="" value="45: GGBR4">GGBR4</option><option _ngcontent-c4="" value="46: GNDI3">GNDI3</option><option _ngcontent-c4="" value="47: GOAU4">GOAU4</option><option _ngcontent-c4="" value="48: GOLL4">GOLL4</option><option _ngcontent-c4="" value="49: HAPV3">HAPV3</option><option _ngcontent-c4="" value="50: HGTX3">HGTX3</option><option _ngcontent-c4="" value="51: HYPE3">HYPE3</option><option _ngcontent-c4="" value="52: IGTA3">IGTA3</option><option _ngcontent-c4="" value="53: IRBR3">IRBR3</option><option _ngcontent-c4="" value="54: ITSA4">ITSA4</option><option _ngcontent-c4="" value="55: ITUB4">ITUB4</option><option _ngcontent-c4="" value="56: KLBN11">KLBN11</option><option _ngcontent-c4="" value="57: LAME3">LAME3</option><option _ngcontent-c4="" value="58: LAME4">LAME4</option><option _ngcontent-c4="" value="59: LREN3">LREN3</option><option _ngcontent-c4="" value="60: MDIA3">MDIA3</option><option _ngcontent-c4="" value="61: MRVE3">MRVE3</option><option _ngcontent-c4="" value="62: MULT3">MULT3</option><option _ngcontent-c4="" value="63: MYPK3">MYPK3</option><option _ngcontent-c4="" value="64: ODPV3">ODPV3</option><option _ngcontent-c4="" value="65: PCAR4">PCAR4</option><option _ngcontent-c4="" value="66: PETR3">PETR3</option><option _ngcontent-c4="" value="67: PETR4">PETR4</option><option _ngcontent-c4="" value="68: POMO4">POMO4</option><option _ngcontent-c4="" value="69: PSSA3">PSSA3</option><option _ngcontent-c4="" value="70: RADL3">RADL3</option><option _ngcontent-c4="" value="71: RENT3">RENT3</option><option _ngcontent-c4="" value="72: SANB11">SANB11</option><option _ngcontent-c4="" value="73: SEER3">SEER3</option><option _ngcontent-c4="" value="74: SMAL11">SMAL11</option><option _ngcontent-c4="" value="75: SMLS3">SMLS3</option><option _ngcontent-c4="" value="76: SULA11">SULA11</option><option _ngcontent-c4="" value="77: SUZB3">SUZB3</option><option _ngcontent-c4="" value="78: TAEE11">TAEE11</option><option _ngcontent-c4="" value="79: TIET11">TIET11</option><option _ngcontent-c4="" value="80: TIMP3">TIMP3</option><option _ngcontent-c4="" value="81: TOTS3">TOTS3</option><option _ngcontent-c4="" value="82: TRPL4">TRPL4</option><option _ngcontent-c4="" value="83: USIM5">USIM5</option><option _ngcontent-c4="" value="84: VALE3">VALE3</option><option _ngcontent-c4="" value="85: VIVT4">VIVT4</option><option _ngcontent-c4="" value="86: VLID3">VLID3</option><option _ngcontent-c4="" value="87: WEGE3">WEGE3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group">
+                                    <label _ngcontent-c4="">Ativo Independente</label>
+                                    <select _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" title="Possibilita a busca específica de pares com uma determinado ativo na condição de independente. Quando selecionar 'Todos', será utilizado todos os ativos configurados pelo usuário.">
+                                        <option _ngcontent-c4="" value="0: undefined">Todos</option>
+                                        <!----><option _ngcontent-c4="" value="1: ABEV3">ABEV3</option><option _ngcontent-c4="" value="2: ALUP11">ALUP11</option><option _ngcontent-c4="" value="3: ARZZ3">ARZZ3</option><option _ngcontent-c4="" value="4: AZUL4">AZUL4</option><option _ngcontent-c4="" value="5: B3SA3">B3SA3</option><option _ngcontent-c4="" value="6: BBAS3">BBAS3</option><option _ngcontent-c4="" value="7: BBDC3">BBDC3</option><option _ngcontent-c4="" value="8: BBDC4">BBDC4</option><option _ngcontent-c4="" value="9: BBSE3">BBSE3</option><option _ngcontent-c4="" value="10: BEEF3">BEEF3</option><option _ngcontent-c4="" value="11: BOVA11">BOVA11</option><option _ngcontent-c4="" value="12: BRAP4">BRAP4</option><option _ngcontent-c4="" value="13: BRDT3">BRDT3</option><option _ngcontent-c4="" value="14: BRFS3">BRFS3</option><option _ngcontent-c4="" value="15: BRKM5">BRKM5</option><option _ngcontent-c4="" value="16: BRML3">BRML3</option><option _ngcontent-c4="" value="17: BRSR6">BRSR6</option><option _ngcontent-c4="" value="18: BTOW3">BTOW3</option><option _ngcontent-c4="" value="19: CCRO3">CCRO3</option><option _ngcontent-c4="" value="20: CESP6">CESP6</option><option _ngcontent-c4="" value="21: CIEL3">CIEL3</option><option _ngcontent-c4="" value="22: CMIG3">CMIG3</option><option _ngcontent-c4="" value="23: CMIG4">CMIG4</option><option _ngcontent-c4="" value="24: CPLE6">CPLE6</option><option _ngcontent-c4="" value="25: CRFB3">CRFB3</option><option _ngcontent-c4="" value="26: CSAN3">CSAN3</option><option _ngcontent-c4="" value="27: CSMG3">CSMG3</option><option _ngcontent-c4="" value="28: CSNA3">CSNA3</option><option _ngcontent-c4="" value="29: CVCB3">CVCB3</option><option _ngcontent-c4="" value="30: CYRE3">CYRE3</option><option _ngcontent-c4="" value="31: DTEX3">DTEX3</option><option _ngcontent-c4="" value="32: ECOR3">ECOR3</option><option _ngcontent-c4="" value="33: EGIE3">EGIE3</option><option _ngcontent-c4="" value="34: ELET3">ELET3</option><option _ngcontent-c4="" value="35: ELET6">ELET6</option><option _ngcontent-c4="" value="36: EMBR3">EMBR3</option><option _ngcontent-c4="" value="37: ENAT3">ENAT3</option><option _ngcontent-c4="" value="38: ENBR3">ENBR3</option><option _ngcontent-c4="" value="39: ENGI11">ENGI11</option><option _ngcontent-c4="" value="40: EQTL3">EQTL3</option><option _ngcontent-c4="" value="41: ESTC3">ESTC3</option><option _ngcontent-c4="" value="42: EZTC3">EZTC3</option><option _ngcontent-c4="" value="43: FLRY3">FLRY3</option><option _ngcontent-c4="" value="44: GFSA3">GFSA3</option><option _ngcontent-c4="" value="45: GGBR4">GGBR4</option><option _ngcontent-c4="" value="46: GNDI3">GNDI3</option><option _ngcontent-c4="" value="47: GOAU4">GOAU4</option><option _ngcontent-c4="" value="48: GOLL4">GOLL4</option><option _ngcontent-c4="" value="49: HAPV3">HAPV3</option><option _ngcontent-c4="" value="50: HGTX3">HGTX3</option><option _ngcontent-c4="" value="51: HYPE3">HYPE3</option><option _ngcontent-c4="" value="52: IGTA3">IGTA3</option><option _ngcontent-c4="" value="53: IRBR3">IRBR3</option><option _ngcontent-c4="" value="54: ITSA4">ITSA4</option><option _ngcontent-c4="" value="55: ITUB4">ITUB4</option><option _ngcontent-c4="" value="56: KLBN11">KLBN11</option><option _ngcontent-c4="" value="57: LAME3">LAME3</option><option _ngcontent-c4="" value="58: LAME4">LAME4</option><option _ngcontent-c4="" value="59: LREN3">LREN3</option><option _ngcontent-c4="" value="60: MDIA3">MDIA3</option><option _ngcontent-c4="" value="61: MRVE3">MRVE3</option><option _ngcontent-c4="" value="62: MULT3">MULT3</option><option _ngcontent-c4="" value="63: MYPK3">MYPK3</option><option _ngcontent-c4="" value="64: ODPV3">ODPV3</option><option _ngcontent-c4="" value="65: PCAR4">PCAR4</option><option _ngcontent-c4="" value="66: PETR3">PETR3</option><option _ngcontent-c4="" value="67: PETR4">PETR4</option><option _ngcontent-c4="" value="68: POMO4">POMO4</option><option _ngcontent-c4="" value="69: PSSA3">PSSA3</option><option _ngcontent-c4="" value="70: RADL3">RADL3</option><option _ngcontent-c4="" value="71: RENT3">RENT3</option><option _ngcontent-c4="" value="72: SANB11">SANB11</option><option _ngcontent-c4="" value="73: SEER3">SEER3</option><option _ngcontent-c4="" value="74: SMAL11">SMAL11</option><option _ngcontent-c4="" value="75: SMLS3">SMLS3</option><option _ngcontent-c4="" value="76: SULA11">SULA11</option><option _ngcontent-c4="" value="77: SUZB3">SUZB3</option><option _ngcontent-c4="" value="78: TAEE11">TAEE11</option><option _ngcontent-c4="" value="79: TIET11">TIET11</option><option _ngcontent-c4="" value="80: TIMP3">TIMP3</option><option _ngcontent-c4="" value="81: TOTS3">TOTS3</option><option _ngcontent-c4="" value="82: TRPL4">TRPL4</option><option _ngcontent-c4="" value="83: USIM5">USIM5</option><option _ngcontent-c4="" value="84: VALE3">VALE3</option><option _ngcontent-c4="" value="85: VIVT4">VIVT4</option><option _ngcontent-c4="" value="86: VLID3">VLID3</option><option _ngcontent-c4="" value="87: WEGE3">WEGE3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group">
+                                    <label _ngcontent-c4="">Tipo de Regressão</label>
+                                    <select _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" title="Tipo de Regressão.">
+                                        <option _ngcontent-c4="" value="0: -1">Todos</option>
+                                        <option _ngcontent-c4="" value="1: 1">Simples</option>
+                                        <option _ngcontent-c4="" value="2: 2">Múltipla</option>
+                                        <!---->
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group">
+                                    <label _ngcontent-c4="">Cointegrado</label>
+                                    <select _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" title="Possibilita a busca de pares que também estejam cointegrados inversamente, ou seja, que estejam cointegrados os papeis A e B e também B e A.">
+                                        <option _ngcontent-c4="" value="0: 0">Todos</option>
+                                        <option _ngcontent-c4="" value="1: 1">AB-BA</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group">
+                                    <label _ngcontent-c4="">Cointegrações (ADF %)</label>
+                                    <div _ngcontent-c4="" class="form-control border-input " title="Representa a quantidade de períodos cointegrados e em quais niveis de ADF. Os cálculos são realizados em 9 períodos, portanto o maior número de periodos retornados será 9. ">
+                                        <label _ngcontent-c4="">99</label> <input _ngcontent-c4="" type="checkbox" class="ng-untouched ng-pristine ng-valid">
+                                        <label _ngcontent-c4="">95</label> <input _ngcontent-c4="" type="checkbox" class="ng-untouched ng-pristine ng-valid">
+                                        <label _ngcontent-c4="">90</label> <input _ngcontent-c4="" type="checkbox" class="ng-untouched ng-pristine ng-valid">
+                                        <label _ngcontent-c4="">&gt;=</label>
+                                        <select _ngcontent-c4="" style="border: 0; background-color: #f3f1f1a6; width: 40px; " class="ng-untouched ng-pristine ng-valid">
+                                            
+                                            <option _ngcontent-c4="" value="0: 1">1</option>
+                                            <option _ngcontent-c4="" value="1: 2">2</option>
+                                            <option _ngcontent-c4="" value="2: 3">3</option>
+                                            <option _ngcontent-c4="" value="3: 4">4</option>
+                                            <option _ngcontent-c4="" value="4: 5">5</option>
+                                            <option _ngcontent-c4="" value="5: 6">6</option>
+                                            <option _ngcontent-c4="" value="6: 7">7</option>
+                                            <option _ngcontent-c4="" value="7: 8">8</option>
+                                            <option _ngcontent-c4="" value="8: 9">9</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----><div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group">
+                                    <label _ngcontent-c4="">Dickey Fuller</label>
+                                    <select _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" title="Possibilita a busca de pares que possua o Melhor Dickey Fuller dentro do filtro.">
+                                        <option _ngcontent-c4="" value="0: undefined">Todos</option>
+                                        <option _ngcontent-c4="" value="1: 1">Melhor Dickey Fuller</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div _ngcontent-c4="" class="row">
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group is-empty">
+                                    <label _ngcontent-c4="">Mínimo % Fin. (C/V)</label>
+                                    <div _ngcontent-c4="" title="Representa o valor mínimo e valor mínimo em porcentagem para busca de pares ">
+                                        <input _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" maxlength="3" name="minFinancial" size="3" title="Valor mínimo financeiro." type="number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group is-empty">
+                                    <label _ngcontent-c4="">Máximo % Fin. (C/V)</label>
+                                    <div _ngcontent-c4="" title="Representa o valor mínimo e valor máximo em porcentagem para busca de pares ">
+                                        <input _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" maxlength="3" name="maxFinancial" size="3" title="Valor máximo financeiro" type="number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group is-empty">
+                                    <label _ngcontent-c4="">Quantidade de Desvios</label>
+                                    <input _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" name="deviationsQuantity" title="Valor de desvio padrão. Inserindo 2, a busca irá retornar operações com períodos que estejam com 2 ou mais desvios padrões." type="number">
+                                </div>
+                            </div>
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group is-empty">
+                                    <label _ngcontent-c4="">Meia Vida (dias) &lt;= </label>
+                                    <input _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" name="halfLife" title="Possibilita a busca de pares de acordo com o Meia Vida." type="number">
+                                </div>
+                            </div>
+                            <div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group is-empty">
+                                    <label _ngcontent-c4="">Vol. Beta Rotation &lt;= </label>
+                                    <input _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" name="betaRotationVolatility" title="Possibilita a busca de pares de acordo com o Bota Rotation." type="number">
+                                </div>
+                            </div>
+                            <!----><div _ngcontent-c4="" class="col-md-2">
+                                <div _ngcontent-c4="" class="form-group">
+                                    <label _ngcontent-c4="">Beta Rotation</label>
+                                    <select _ngcontent-c4="" class="form-control border-input ng-untouched ng-pristine ng-valid" title="Possibilita a busca de pares que possua o Beta Rotation do mesmo lado do Resíduo.">
+                                        <option _ngcontent-c4="" value="0: undefined">Todos</option>
+                                        <option _ngcontent-c4="" value="1: 1">Mesmo lado do Resíduo</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div _ngcontent-c4="" class="card-content table-responsive">
+                        <hr _ngcontent-c4="">
+                        <button _ngcontent-c4="" class="btn btn-info btn-fill btn-wd" title="Busca os pares de acordo com o filtro preenchido." type="button"><i _ngcontent-c4="" class="ti-search"></i> Buscar<div class="ripple-container"></div></button>
+                        <button _ngcontent-c4="" class="btn btn-info btn-fill btn-wd" title="Limpa o filtro preenchido." type="button"><i _ngcontent-c4="" class="ti-eraser"></i> Limpar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----><div _ngcontent-c4="" class="row">
+            <div _ngcontent-c4="" class="col-md-12">
+                <div _ngcontent-c4="" class="card">
+
+                    <div _ngcontent-c4="" class="card-content table-responsive">
+                        <table _ngcontent-c4="" class="table">
+                            <thead _ngcontent-c4="" class="thead-dark">
+                                <th _ngcontent-c4="" style="text-align: center;"><p _ngcontent-c4="">#</p></th>
+                                <th _ngcontent-c4="" style="text-align: center;"><p _ngcontent-c4="">Tipo</p></th>
+                                
+                                <th _ngcontent-c4="" style="text-align: center;"><p _ngcontent-c4="">Períodos</p></th>
+                                <th _ngcontent-c4="" style="text-align: center;"><p _ngcontent-c4="">Regressão</p></th>
+                                <th _ngcontent-c4="" style="text-align: center;"><p _ngcontent-c4="">Dependente</p></th>
+                                <th _ngcontent-c4="" style="text-align: center;"><p _ngcontent-c4="">Independente</p></th>
+                                <th _ngcontent-c4="" colspan="2" style="text-align: center;"><p _ngcontent-c4="">Detalhes</p></th>
+                            </thead>
+                            <!----><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(247, 247, 247);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">1</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">9</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><p _ngcontent-c4="">Simples</p>
+                                        <!---->
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">ITUB4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">ITSA4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Esconder Períodos">keyboard_arrow_down</i>
+                                    </td>
+                                </tr>
+                                <!----><tr _ngcontent-c4="">
+                                    <td _ngcontent-c4="" colspan="8">
+                                        <operation-detail-v3-cmp _ngcontent-c4="" _nghost-c5="">
+
+    <!----><div _ngcontent-c5="" class="row">
+        
+            
+                <div _ngcontent-c5="" class="card-content table-responsive">
+                    <table _ngcontent-c5="" class="table">
+                        <thead _ngcontent-c5="">
+                            <th _ngcontent-c5="" style="text-align: center;"><p _ngcontent-c5="">Período</p></th>
+                            <th _ngcontent-c5="" colspan="2" style="text-align: center;"><p _ngcontent-c5="">Dickey Fuller</p></th>
+                            <th _ngcontent-c5="" colspan="2" style="text-align: center;"><p _ngcontent-c5="">ADF</p></th>
+                            <th _ngcontent-c5="" colspan="2" style="text-align: center;"><p _ngcontent-c5="">Coef. Angular</p></th>
+                            <th _ngcontent-c5="" colspan="2" style="text-align: center;"><p _ngcontent-c5="">Qtd. Desvios</p></th>
+                            <th _ngcontent-c5="" colspan="2" style="text-align: center;"><p _ngcontent-c5="">Fisher Min/Max</p></th>
+                            
+                            
+                            <th _ngcontent-c5="" style="text-align: center;"><p _ngcontent-c5="">% Financeiro (C/V)</p></th>
+                            <th _ngcontent-c5="" style="text-align: center;"><p _ngcontent-c5="">Meia Vida (dias)</p></th>
+                            <th _ngcontent-c5="" style="text-align: center;"><p _ngcontent-c5="">Entrar</p></th>
+                            <th _ngcontent-c5="" style="text-align: center;"><p _ngcontent-c5="">Detalhes</p></th>
+                        </thead>
+                        <!----><tbody _ngcontent-c5="">
+                            <tr _ngcontent-c5="" style="font-size: 12px; background-color: rgba(238, 238, 238, 0.45);">
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">100</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">-3,94</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">95,00%</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,74</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,97</p></td>
+                                <td _ngcontent-c5="" style="text-align: right; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">86,57%</p></td>
+                                <td _ngcontent-c5="" style="text-align: left; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">95,08%</p></td>
+                                
+                                
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">100.36% - NÃO</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">5,39</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Entrar na Operação">file_upload</i>
+                                </td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <!----><i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Mostrar Gráfico do Resíduo">keyboard_arrow_right</i>
+                                    <!---->
+                                </td>
+                            </tr>
+                            <!---->
+                            <!---->
+                            
+                        </tbody><tbody _ngcontent-c5="">
+                            <tr _ngcontent-c5="" style="font-size: 12px; background-color: rgba(238, 238, 238, 0.45);">
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">120</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">-3,96</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">95,00%</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,74</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,94</p></td>
+                                <td _ngcontent-c5="" style="text-align: right; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">87,71%</p></td>
+                                <td _ngcontent-c5="" style="text-align: left; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">95,08%</p></td>
+                                
+                                
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">100.09% - NÃO</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">6,36</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Entrar na Operação">file_upload</i>
+                                </td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <!----><i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Mostrar Gráfico do Resíduo">keyboard_arrow_right</i>
+                                    <!---->
+                                </td>
+                            </tr>
+                            <!---->
+                            <!---->
+                            
+                        </tbody><tbody _ngcontent-c5="">
+                            <tr _ngcontent-c5="" style="font-size: 12px; background-color: rgba(238, 238, 238, 0.45);">
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">140</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">-4,52</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">99,00%</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,77</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,93</p></td>
+                                <td _ngcontent-c5="" style="text-align: right; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">89,19%</p></td>
+                                <td _ngcontent-c5="" style="text-align: left; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">95,38%</p></td>
+                                
+                                
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">99.08% - OK</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">5,85</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Entrar na Operação">file_upload</i>
+                                </td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <!----><i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Mostrar Gráfico do Resíduo">keyboard_arrow_right</i>
+                                    <!---->
+                                </td>
+                            </tr>
+                            <!---->
+                            <!---->
+                            
+                        </tbody><tbody _ngcontent-c5="">
+                            <tr _ngcontent-c5="" style="font-size: 12px; background-color: rgba(238, 238, 238, 0.45);">
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">160</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">-4,37</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">99,00%</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,76</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,01</p></td>
+                                <td _ngcontent-c5="" style="text-align: right; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">88,63%</p></td>
+                                <td _ngcontent-c5="" style="text-align: left; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">94,84%</p></td>
+                                
+                                
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">99.33% - OK</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">7,86</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Entrar na Operação">file_upload</i>
+                                </td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <!----><i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Mostrar Gráfico do Resíduo">keyboard_arrow_right</i>
+                                    <!---->
+                                </td>
+                            </tr>
+                            <!---->
+                            <!---->
+                            
+                        </tbody><tbody _ngcontent-c5="">
+                            <tr _ngcontent-c5="" style="font-size: 12px; background-color: rgba(238, 238, 238, 0.45);">
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">180</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">-4,66</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">99,00%</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,71</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">1,82</p></td>
+                                <td _ngcontent-c5="" style="text-align: right; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">88,34%</p></td>
+                                <td _ngcontent-c5="" style="text-align: left; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">94,46%</p></td>
+                                
+                                
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">101.24% - NÃO</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">7,75</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Entrar na Operação">file_upload</i>
+                                </td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <!----><i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Mostrar Gráfico do Resíduo">keyboard_arrow_right</i>
+                                    <!---->
+                                </td>
+                            </tr>
+                            <!---->
+                            <!---->
+                            
+                        </tbody><tbody _ngcontent-c5="">
+                            <tr _ngcontent-c5="" style="font-size: 12px; background-color: rgba(238, 238, 238, 0.45);">
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">200</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">-4,99</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">99,00%</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,71</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">1,89</p></td>
+                                <td _ngcontent-c5="" style="text-align: right; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">88,70%</p></td>
+                                <td _ngcontent-c5="" style="text-align: left; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">94,42%</p></td>
+                                
+                                
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">101.19% - NÃO</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">7,55</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Entrar na Operação">file_upload</i>
+                                </td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <!----><i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Mostrar Gráfico do Resíduo">keyboard_arrow_right</i>
+                                    <!---->
+                                </td>
+                            </tr>
+                            <!---->
+                            <!---->
+                            
+                        </tbody><tbody _ngcontent-c5="">
+                            <tr _ngcontent-c5="" style="font-size: 12px; background-color: rgba(238, 238, 238, 0.45);">
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">220</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">-5,14</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">99,00%</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,80</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">1,95</p></td>
+                                <td _ngcontent-c5="" style="text-align: right; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">89,94%</p></td>
+                                <td _ngcontent-c5="" style="text-align: left; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">94,88%</p></td>
+                                
+                                
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">98.22% - OK</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">7,89</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Entrar na Operação">file_upload</i>
+                                </td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <!----><i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Mostrar Gráfico do Resíduo">keyboard_arrow_right</i>
+                                    <!---->
+                                </td>
+                            </tr>
+                            <!---->
+                            <!---->
+                            
+                        </tbody><tbody _ngcontent-c5="">
+                            <tr _ngcontent-c5="" style="font-size: 12px; background-color: rgba(238, 238, 238, 0.45);">
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">240</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">-5,22</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">99,00%</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,91</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">1,99</p></td>
+                                <td _ngcontent-c5="" style="text-align: right; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">90,14%</p></td>
+                                <td _ngcontent-c5="" style="text-align: left; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">94,83%</p></td>
+                                
+                                
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">94.3% - OK</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">8,55</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Entrar na Operação">file_upload</i>
+                                </td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <!----><i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Mostrar Gráfico do Resíduo">keyboard_arrow_right</i>
+                                    <!---->
+                                </td>
+                            </tr>
+                            <!---->
+                            <!---->
+                            
+                        </tbody><tbody _ngcontent-c5="">
+                            <tr _ngcontent-c5="" style="font-size: 12px; background-color: rgb(76, 167, 80);">
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">250</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">-5,30</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">99,00%</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,94</p></td>
+                                <td _ngcontent-c5="" colspan="2" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">2,00</p></td>
+                                <td _ngcontent-c5="" style="text-align: right; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">89,88%</p></td>
+                                <td _ngcontent-c5="" style="text-align: left; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">94,62%</p></td>
+                                
+                                
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">93.26% - OK</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;"><p _ngcontent-c5="">8,93</p></td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Entrar na Operação">file_upload</i>
+                                </td>
+                                <td _ngcontent-c5="" style="text-align: center; padding-bottom: 3px;font-size: large; font-weight: bold;">
+                                    <!----><i _ngcontent-c5="" class="material-icons" style="cursor: pointer;" title="Mostrar Gráfico do Resíduo">keyboard_arrow_right</i>
+                                    <!---->
+                                </td>
+                            </tr>
+                            <!---->
+                            <!---->
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div _ngcontent-c5="" class="card-footer">
+                    <div _ngcontent-c5="" class="stats">
+                        <i _ngcontent-c5="" class="material-icons">access_time</i> Atualizado em: 19/08/2019 - 02:00:41
+                    </div>
+                </div>
+            
+        
+    </div>
+
+
+<!---->
+</operation-detail-v3-cmp>
+                                    </td>
+                                </tr>
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">2</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">9</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><p _ngcontent-c4="">Simples</p>
+                                        <!---->
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">ITSA4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">ITUB4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">9</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><p _ngcontent-c4="">Simples</p>
+                                        <!---->
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">MULT3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">LREN3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">9</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                        <!----><p _ngcontent-c4="">Múltipla</p>
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">ITSA4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">ITUB4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">5</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">9</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                        <!----><p _ngcontent-c4="">Múltipla</p>
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">ITUB4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">ITSA4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">6</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">8</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                        <!----><p _ngcontent-c4="">Múltipla</p>
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">MULT3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">LREN3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">7</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">8</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><p _ngcontent-c4="">Simples</p>
+                                        <!---->
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">MULT3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">EQTL3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">8</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">7</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><p _ngcontent-c4="">Simples</p>
+                                        <!---->
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">GGBR4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">GOAU4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">9</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">7</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><p _ngcontent-c4="">Simples</p>
+                                        <!---->
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">BBSE3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">TRPL4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">10</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">7</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                        <!----><p _ngcontent-c4="">Múltipla</p>
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">MULT3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">BBSE3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">11</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">7</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                        <!----><p _ngcontent-c4="">Múltipla</p>
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">GOLL4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">AZUL4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">12</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">7</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                        <!----><p _ngcontent-c4="">Múltipla</p>
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">TAEE11</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">TRPL4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">13</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">7</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                        <!----><p _ngcontent-c4="">Múltipla</p>
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">MULT3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">EQTL3</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody><tbody _ngcontent-c4="">
+                                <tr _ngcontent-c4="" style="background-color: rgb(255, 255, 255);">
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">14</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">Diário</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">7</p></td>
+                                    
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><p _ngcontent-c4="">Simples</p>
+                                        <!---->
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">GOLL4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;"><p _ngcontent-c4="">AZUL4</p></td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!---->
+                                    </td>
+                                    <td _ngcontent-c4="" style="text-align: center; padding-bottom: 2px;font-size: large;">
+                                        <!----><i _ngcontent-c4="" class="material-icons" style="cursor: pointer;" title="Mostrar Períodos">keyboard_arrow_right</i>
+                                        <!---->
+                                    </td>
+                                </tr>
+                                <!---->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div _ngcontent-c4="" class="card-footer">
+                        <div _ngcontent-c4="" class="stats">
+                            <i _ngcontent-c4="" class="material-icons" style="cursor: pointer;">access_time</i> Atualizado em: 19/08/2019 - 02:00:37
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></search-operations-cmp>
+        <!----><div _ngcontent-c0="">
+            <app-footer _ngcontent-c0="" _nghost-c2=""><!----><footer _ngcontent-c2="">
+    <div _ngcontent-c2="" class="container-fluid">
+        <!----><nav _ngcontent-c2="" class="pull-left">
+            <ul _ngcontent-c2="">
+                <li _ngcontent-c2="">
+                    <a _ngcontent-c2="" href="/dashboard">
+                        Dashboard
+                    </a>
+                </li>
+                <li _ngcontent-c2="">
+                    <a _ngcontent-c2="" href="/long-short/cointegration">
+                        Cointegração
+                    </a>
+                </li>
+                
+                <li _ngcontent-c2="">
+                    <a _ngcontent-c2="" href="/user-operations">
+                        Minhas Operações
+                    </a>
+                </li>
+                <li _ngcontent-c2="">
+                    <a _ngcontent-c2="" href="/user-profile">
+                        Meu Perfil
+                    </a>
+                </li>
+                <li _ngcontent-c2="">
+                    <a _ngcontent-c2="" style="cursor: pointer">
+                        Deixe sua Opinião
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p _ngcontent-c2="" class="copyright pull-right">
+            <a _ngcontent-c2="" href="/dashboard">© 2019 QuantGO@QQuant</a> 
+        </p>
+    </div>
+</footer>
+
+<!---->
+</app-footer>
+        </div>
+    </div>
+</div>
+
+<!---->
+<app-loading _ngcontent-c0="" _nghost-c3=""><div _ngcontent-c3="" aria-hidden="true" aria-labelledby="enterOperationModalLabel" class="modal fade" data-backdrop="static" data-keyboard="false" id="loadingModal" role="dialog" tabindex="0" style="display: none;">
+    <div _ngcontent-c3="" class="modal-dialog" role="document">
+        <div _ngcontent-c3="" class="modal-content">
+            <div _ngcontent-c3="" class="modal-body">
+              <img _ngcontent-c3="" src="/assets/img/loading.gif" width="20%" height="20%"> Carregando
+            </div>
+        </div>
+    </div>
+</div></app-loading></app-root>
+
+  
+  
+
+  <!-- Google Analytics -->
+
+<script src="https://connect.facebook.net/signals/plugins/inferredEvents.js?v=2.9.2" async=""></script><script src="https://connect.facebook.net/signals/config/327751417978886?v=2.9.2&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-124607697-1', 'auto');  //prod    
+  // ga('create', 'UA-124607697-2', 'auto');     //dev  
+
+
+
+  </script>
+  
+  <!-- End Google Analytics -->
+  <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '327751417978886');
+  fbq('track', 'PageView');
+  fbq('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=327751417978886&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="scripts.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script>
+<script>
+  $(".page").click(function( evt ) {
+
+  evt.preventDefault();       // prevents browser's default anchor behavior
+
+  // Other code here....
+  $(".page").hide();            // HIDE ALL     .page
+  $("."+ this.id ).show();      // SHOW RELATED .(id)
+  });
+</script>
+
